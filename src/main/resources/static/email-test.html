@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Test</title>
+    <link rel="stylesheet" href="/css/email-style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Send Test Email</h2>
+    <form id="emailForm" enctype="multipart/form-data">
+        <label>To:</label>
+        <input type="email" id="to" name="to" required>
+
+        <label>Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label>Body (HTML allowed):</label>
+        <textarea id="body" name="body" rows="6" placeholder="Leave empty to use the template"></textarea>
+
+        <label>Attachments:</label>
+        <input type="file" id="attachments" name="attachments" multiple>
+
+        <button type="submit">Send Email 🚀</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="/js/apicall.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="/css/notifications.css">
+</head>
+<body>
+<div class="notification-container">
+    <h2>🔔 Notifications</h2>
+
+    <div th:if="${notifications.isEmpty()}">
+        <p>No notifications yet.</p>
+    </div>
+
+    <ul th:if="${!notifications.isEmpty()}">
+        <li th:each="n : ${notifications}">
+            <div class="notification-item" th:classappend="${n.readFlag} ? ' read' : ' unread'">
+                <p th:text="${n.message}"></p>
+                <a th:href="@{/notifications/read(id=${n.id})}" target="_self">View Details</a>
+                <span th:text="${#temporals.format(n.createdAt, 'yyyy-MM-dd HH:mm')}"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

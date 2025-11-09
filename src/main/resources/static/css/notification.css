@@ -1,0 +1,26 @@
+.notification-container {
+    width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification-item.unread p {
+    font-weight: bold;
+}
+
+.notification-item.unread {
+    background: #f4f9ff;
+}
+
+.notification-item a {
+    color: #007bff;
+    text-decoration: none;
+}
