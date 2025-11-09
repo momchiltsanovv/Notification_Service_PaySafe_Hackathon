@@ -1,7 +1,7 @@
 # Notification Service
 
 > **Part of SmartWallet (Hack-Cash)**  
-> This service is a component of the SmartWallet project, located in the [SmartWallet_PaySafe_Hackathon](https://github.com/your-org/SmartWallet_PaySafe_Hackathon) repository.
+> This service is a component of the SmartWallet project, located in the [SmartWallet_PaySafe_Hackathon](https://github.com/momchiltsanovv/SmartWallet_PaySafe_Hackathon) repository.
 
 A Spring Boot-based email notification service that allows users to send email notifications and manage their notification preferences.
 
